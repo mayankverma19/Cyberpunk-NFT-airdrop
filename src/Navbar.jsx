@@ -3,7 +3,6 @@ import "./styles/Navbar.scss";
 import Facebook from "./assets/social-media-icons/facebook.png";
 import Twitter from "./assets/social-media-icons/twitter.png";
 import Email from "./assets/social-media-icons/email.png";
-import Linkedin from "./assets/social-media-icons/";
 
 export default function Navbar({ accounts, setAccounts }) {
   const isConnected = Boolean(accounts[0]);
@@ -22,16 +21,12 @@ export default function Navbar({ accounts, setAccounts }) {
   return (
     <header className="header">
       <section className="iconContainer">
-        {/* <a href="www.facebook.com">
-                    <img src={Facebook} alt="facebook" />
-                </a> */}
-        {/* <a href="www.twitter.com">
-                    <img src={Twitter} alt="twitter" />
-                </a> */}
+        
         <a href="https://www.linkedin.com/in/basilisk111/">
           <img
-            src="https://img.icons8.com/doodle/344/linkedin--v2.png"
-            alt="twitter"
+            id="ahah"
+            src="https://cdn.icon-icons.com/icons2/2873/PNG/512/linkedin_pixel_logo_icon_181925.png"
+            alt="linkedin"
           />
         </a>
         <a href="mailto:lit2019038@iiitl.ac.in">

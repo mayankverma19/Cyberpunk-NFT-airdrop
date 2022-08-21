@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ethers, BigNumber } from "ethers";
 import roboPunksNFT from "./RoboPunksNFT.json";
 
-const roboPunksNFTAddress = "0x1605B1e876Da488b33F4dD398a3C946089A05Eaf";
+const roboPunksNFTAddress = "0x0921B8FaBbcD58d66d72eD322224638ecb88ff72";
 
 export default function MainMint({ accounts, setAccounts }) {
 
@@ -34,15 +34,15 @@ export default function MainMint({ accounts, setAccounts }) {
     }
 
     function handleIncrement() {
-        if (mintAmount >= 3) return;
+        if (mintAmount >= 5) return;
         setMintAmount(mintAmount + 1);
     }
 
     return (
         <section className="mainMint">
-            <h1>RoboPunks</h1>
+            <h1>CyberPunk NFTs</h1>
             <p>
-                It's 2078. Can the RoboPunks NFT save humans from destructive rampant NFT speculations? Mint RoboPunks to find out.
+                It's 2077. Can the CyberPunk NFT save humans from destructive rampant NFT speculations? Mint CyberPunk to find out.
             </p>
             {
                 isConnected ? (

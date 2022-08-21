@@ -21,14 +21,11 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 module.exports = {
   solidity: "0.8.4",
   networks: {
-    // rinkeby: {
-    //   url: process.env.REACT_APP_RINKEBY_RPC_URL,
-    //   accounts: [process.env.REACT_APP_PRIVATE_KEY]
-    // },
-    mumbai: {
-      url: "https://polygon-mumbai.g.alchemy.com/v2/TLhrP5QgRxZ9FmyGlvDzyZQJ6yxIVv8j",
-      accounts: ["f08df35c18fd742d71961ce4a408a9770008505ff8f0cf5552ce6baadea8a1c9"]
+    rinkeby: {
+      url: process.env.REACT_APP_RINKEBY_RPC_URL,
+      accounts: [process.env.REACT_APP_PRIVATE_KEY]
     },
+   
   },
   etherscan: {
     apiKey: process.env.REACT_APP_ETHERSCAN_KEY

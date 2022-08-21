@@ -1,7 +1,6 @@
 import "./styles/Navbar.scss";
 
-import Facebook from "./assets/social-media-icons/facebook.png";
-import Twitter from "./assets/social-media-icons/twitter.png";
+
 import Email from "./assets/social-media-icons/email.png";
 
 export default function Navbar({ accounts, setAccounts }) {

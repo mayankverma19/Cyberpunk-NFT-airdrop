@@ -1,7 +1,6 @@
 import { React } from "react";
 import { Box, Button, Flex, Image, Link, Spacer } from "@chakra-ui/react";
-import Facebook from "./assets/social-media-icons/facebook_32x32.png";
-import Twitter from "./assets/social-media-icons/twitter_32x32.png";
+
 import Email from "./assets/social-media-icons/email_32x32.png";
 
 const NavBar = ({ accounts, setAccounts }) => {
@@ -22,13 +21,11 @@ const NavBar = ({ accounts, setAccounts }) => {
     <Flex justify="space-between" align="center" padding="30px">
       {/* Left Side -- Social Media Icons */}
       <Flex justify="space-around" width="40%" padding="0 75px">
-        <Link href="https://www.facebook.com/yangyang818">
-          <Image src={Facebook} boxSize="42px" margin="0 15px"></Image>
+        
+        <Link href="https://www.linkedin.com/in/basilisk111/">
+          <Image src="https://icon-icons.com/icon/linkedin-pixel-logo/181925" boxSize="42px" margin="0 15px"></Image>
         </Link>
-        <Link href="https://twitter.com/Archie_818">
-          <Image src={Twitter} boxSize="42px" margin="0 15px"></Image>
-        </Link>
-        <Link href="mailto:I@double-yang.com">
+        <Link href="mailto:lit2019038@iiitl.ac.in">
           <Image src={Email} boxSize="42px" margin="0 15px"></Image>
         </Link>
       </Flex>

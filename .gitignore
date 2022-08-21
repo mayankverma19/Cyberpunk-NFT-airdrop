@@ -13,7 +13,6 @@
 
 # misc
 .DS_Store
-config.env
 .env.local
 .env.development.local
 .env.test.local
@@ -25,10 +24,11 @@ yarn-error.log*
 
 node_modules
 .env
+assets.zip
 coverage
 coverage.json
 typechain
-
+artifacts
 #Hardhat files
 cache
 artifacts

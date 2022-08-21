@@ -1,20 +1,20 @@
-import './styles/App.scss';
-import MainMint from './MainMint.jsx';
-import Navbar from './Navbar.jsx';
-
+import "./App.css";
 import { useState } from "react";
+import MainMit from "./MainMit";
+import NavBar  from "./NavBar";
 
-export default function App() {
-
+function App() {
   const [accounts, setAccounts] = useState([]);
 
   return (
-    <main className="overlay">
-      <section className="App">
-        <Navbar accounts={accounts} setAccounts={setAccounts} />
-        <MainMint accounts={accounts} setAccounts={setAccounts} />
-      </section>
-      <div className="movingBackground"></div>
-    </main>
+    <div className="overlay">
+      <div className="App">
+        <NavBar accounts={accounts} setAccounts={setAccounts} />
+        <MainMit accounts={accounts} setAccounts={setAccounts} />
+      </div>
+      <div className="moving-background"></div>
+    </div>
   );
 }
+
+export default App;

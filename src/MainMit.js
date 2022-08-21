@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ethers, BigNumber } from "ethers";
 import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
-// 合约对应的json文件--合约编译后
 import Token from "./contracts/Token.json";
 import contractAddress from "./contracts/contract-address.json";
 
@@ -15,7 +14,7 @@ const MainMit = ({ accounts, setAccounts }) => {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
       const contract = new ethers.Contract(
-        contractAddress.Token, // 合约地址
+        contractAddress.Token, 
         Token.abi,
         signer
       );
@@ -44,7 +43,7 @@ const MainMit = ({ accounts, setAccounts }) => {
     <Flex justify="center" align="center" height="100vh" paddingBottom="150px">
       <Box width="520px">
         <Text fontSize="48px" textShadow="0 5px #000000">
-          RoboPunks
+          CyberPunk
         </Text>
         <Text
           fontSize="30px"
@@ -52,8 +51,8 @@ const MainMit = ({ accounts, setAccounts }) => {
           fontFamily="VT323"
           textShadow="0 2px 2px #000000"
         >
-          It's 2078. Can the RoboPunks NFT save humans from destructive rampnt
-          NFT speculation? Mint Robopunks to find out!
+          It's 2078. Can the CyberPunk NFT save humans from destructive rampnt
+          NFT speculation? Mint Cyberpunk to find out!
         </Text>
         {isConnected ? (
           <div>

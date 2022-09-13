@@ -23,7 +23,7 @@ const NavBar = ({ accounts, setAccounts }) => {
       <Flex justify="space-around" width="40%" padding="0 75px">
         
         <Link href="https://www.linkedin.com/in/basilisk111/">
-          <Image src="https://cdn.icon-icons.com/icons2/2873/PNG/512/linkedin_pixel_logo_icon_181925.png" boxSize="42px" margin="0 15px"></Image>
+          <Image src="https://icon-icons.com/icon/linkedin-pixel-logo/181925" boxSize="42px" margin="0 15px"></Image>
         </Link>
         <Link href="mailto:lit2019038@iiitl.ac.in">
           <Image src={Email} boxSize="42px" margin="0 15px"></Image>
